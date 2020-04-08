@@ -55,7 +55,7 @@
     },
     "creator": {
       "type": "array",
-      "§ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/testSplitUp/draft/schemas/schema.json"
+      "§ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/testSplitUp/draft/schemas/creator.json"
     },
     "description": {
       "title": "Description",
