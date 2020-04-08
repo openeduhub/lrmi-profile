@@ -1,0 +1,36 @@
+{
+    "$id": "https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/license.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "License",
+    "description": "Schema for describing the license of an OER.",
+    "type": "object",
+    "_widget": {
+        "type": "SkohubLookup",
+        "options": {
+            "url": "https://skohub.io/literarymachine/skos/oerworldmap.org/assets/json/licenses/"
+        }
+    },
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "Concept"
+            ]
+        },
+        "id": {
+            "type": "string",
+            "format": "uri"
+        },
+        "inScheme": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "enum": [
+                        "https://oerworldmap.org/assets/json/licenses/"
+                    ]
+                }
+            }
+        }
+    }
+}

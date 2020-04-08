@@ -1,0 +1,36 @@
+{
+    "$id": "https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/learningResourceType.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Learning Resource Type",
+    "description": "Schema for describing the resource types of an OER.",
+    "type": "object",
+    "_widget": {
+      "type": "SkohubLookup",
+      "options": {
+        "url": "https://skohub.io/acka47/lrmi-resource-types/heads/master/purl.org/dcx/lrmi-vocabs/learningResourceType/"
+      }
+    },
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": [
+          "Concept"
+        ]
+      },
+      "id": {
+        "type": "string",
+        "format": "uri"
+      },
+      "inScheme": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "http://purl.org/dcx/lrmi-vocabs/learningResourceType/"
+            ]
+          }
+        }
+      }
+    }
+}
