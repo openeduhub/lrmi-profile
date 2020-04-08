@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/schema.json",
+  "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/splitUpSchema/draft/schemas/schema.json",
   "title": "OER",
   "description": "This is a generic JSON schema for describing an Open Educational Resource with schema.org",
   "type": "object",
@@ -57,7 +57,7 @@
     "creator": {
       "type": "array",
       "items": {
-        "$ref": "https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/creator.json"
+        "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/splitUpSchema/draft/schemas/creator.json"
       }
     },
     "description": {
@@ -72,11 +72,11 @@
       "title": "Subject",
       "type": "array",
       "items": {
-        "$ref": "https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/hochschulfaechersystematik-subject.json"
+        "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/splitUpSchema/draft/schemas/hochschulfaechersystematik-subject.json"
       }
     },
     "license": {
-      "$ref": "https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/license.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/splitUpSchema/draft/schemas/license.json"
     },
     "image": {
       "title": "Image",
@@ -95,19 +95,19 @@
       }
     },
     "inLanguage": {
-      "$ref": "https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/language-enum.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/splitUpSchema/draft/schemas/language-enum.json"
     },
     "publisher": {
       "type": "array",
       "items": {
-        "$ref": "https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/publisher.json"
+        "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/splitUpSchema/draft/schemas/publisher.json"
       }
     },
     "learningResourceType": {
-      "$ref": "https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/learningResourceType.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/splitUpSchema/draft/schemas/learningResourceType.json"
     },
     "audience": {
-      "$ref": "https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/audience.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/splitUpSchema/draft/schemas/audience.json"
     },
     "isBasedOn": {
       "title": "Based on",

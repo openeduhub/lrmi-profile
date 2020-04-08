@@ -1,5 +1,5 @@
 {
-    "$id": "https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/language-enum.json",
+    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/splitUpSchema/draft/schemas/language-enum.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Language",
     "description": "Schema for adding the code for the language of an OER.",
