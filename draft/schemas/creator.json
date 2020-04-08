@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "§id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/testSplitUp/draft/schemas/schema.json",
+    "title": "Creator",
+    "items": {
+        "type": "object",
+        "properties": {
+            "type": {
+                "title": "Type",
+                "type": "string",
+                "enum": [
+                    "Person",
+                    "Organization"
+                ]
+            },
+            "id": {
+                "title": "URL",
+                "type": "string",
+                "format": "uri"
+            },
+            "name": {
+                "title": "Name",
+                "type": "string",
+                "_display": {
+                    "placeholder": "The creator's name"
+                }
+            }
+        },
+        "required": [
+            "name",
+            "type"
+        ]
+    }
+}
