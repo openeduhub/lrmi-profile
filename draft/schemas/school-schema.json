@@ -265,7 +265,7 @@
         "_widget": {
           "type": "SkohubLookup",
           "options": {
-            "url": "https://skohub.io/acka47/lrmi-audience-role/heads/master/purl.org/dcx/lrmi-vocabs/educationalAudienceRole/"
+            "url": "https://w3id.org/openeduhub/vocabs/intendedEndUserRole/"
           }
         },
         "properties": {
@@ -285,7 +285,7 @@
               "id": {
                 "type": "string",
                 "enum": [
-                  "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/"
+                  "https://w3id.org/openeduhub/vocabs/intendedEndUserRole/" 
                 ]
               }
             }
