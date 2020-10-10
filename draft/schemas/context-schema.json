@@ -22,7 +22,6 @@
         },
         "additionalProperties": false,
         "required": [
-          "@language"
         ]
       }
     ],
