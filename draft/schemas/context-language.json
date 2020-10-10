@@ -1,0 +1,10 @@
+{
+    "$id": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/23-modularize/draft/schemas/context-language.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Language of metadata",
+    "description": "The language primarily used in description of this resource.",
+    "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/23-modularize/draft/schemas/Language.json",
+    "_display": {
+      "placeholder": "The language primarily used in description of this resource."
+    }
+  }
