@@ -4,7 +4,7 @@
     "title": "JSON-LD Context",
     "description": "The JSON-LD context for the structured resource descriptions",
     "type": "array",
-    "minItems": 2,
+    "minItems": 1,
     "items": [
       {
         "type": "string",
