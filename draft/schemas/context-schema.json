@@ -17,7 +17,7 @@
         "type": "object",
         "properties": {
           "@language": {
-            "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/23-modularize/draft/schemas/Language.json"
+            "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/23-modularize/draft/schemas/inLanguage.json"
           }
         },
         "additionalProperties": false,
