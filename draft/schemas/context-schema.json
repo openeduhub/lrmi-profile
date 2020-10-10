@@ -17,7 +17,7 @@
         "type": "object",
         "properties": {
           "@language": {
-            "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/23-modularize/draft/schemas/inLanguage.json"
+            "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/23-modularize/draft/schemas/context-language.json"
           }
         },
         "additionalProperties": false,
