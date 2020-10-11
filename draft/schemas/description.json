@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schemascription.json",
+    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schemascription.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Description",
     "description": "A description of the learning resource",

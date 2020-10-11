@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/Language.json",
+    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/Language.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Sprachcode",
     "description": "Eine Auflistung ISO 639-1 konformer zweistelliger Sprachcodes.",

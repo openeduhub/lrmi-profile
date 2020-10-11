@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/learningResourceType.json",
+    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/learningResourceType.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Art der Lernressource",
     "description": "Die Art der Lernressource basierend auf der OpenEduHub-Werteliste.",
@@ -30,7 +30,7 @@
       "prefLabel": {
         "title": "Die bevorzugte Bezeichnung des Konzepts",
         "description": "Der 'localized string' für das 'prefLabel' des SKOS-Konzepts",
-        "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/LocalizedString.json"
+        "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/LocalizedString.json"
       }
     },
     "required": [

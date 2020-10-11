@@ -13,52 +13,52 @@
   },
   "properties": {
     "@context": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/context-schema.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/context-schema.json"
     },
     "id": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/id.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/id.json"
     },
     "type": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/type.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/type.json"
     },
     "name": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/name.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/name.json"
     },
     "creator": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/creator.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/creator.json"
     },
     "description": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/description.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/description.json"
     },
     "about": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/about.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/about.json"
     },
     "license": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/license.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/license.json"
     },
     "image": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/image.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/image.json"
     },
     "dateCreated": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/dateCreated.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/dateCreated.json"
     },
     "inLanguage": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/inLanguage.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/inLanguage.json"
     },
     "publisher": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/publisher.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/publisher.json"
     },
     "learningResourceType": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/learningResourceType.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/learningResourceType.json"
     },
     "audience": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/audience.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/audience.json"
     },
     "isBasedOn": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/isBasedOn.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/isBasedOn.json"
     },
     "mainEntityOfPage": {
-      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/mainEntityOfPage.json"
+      "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/mainEntityOfPage.json"
     }
   },
   "required": [

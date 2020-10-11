@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/id.json",
+    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/id.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "URL",
     "description": "The URL/URI of the resource",
