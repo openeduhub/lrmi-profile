@@ -8,7 +8,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "title": "Type",
+          "title": "Typ",
           "type": "string",
           "enum": [
             "Organisation"
