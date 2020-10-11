@@ -1,0 +1,11 @@
+{
+    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/description.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Beschreibung",
+    "description": "Eine Beschreibung der Lernressource.",
+    "type": "string",
+    "_display": {
+        "rows": 5,
+        "placeholder": "Eine kurze Beschreibung der Lernressource."
+    }
+}

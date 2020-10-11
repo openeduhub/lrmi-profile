@@ -1,8 +1,8 @@
 {
-    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/context-schema.json",
+    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/context-schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "JSON-LD Context",
-    "description": "The JSON-LD context for the structured resource descriptions",
+    "description": "Der JSON-LD Kontext für die strukturierte Ressourcen-Beschreibung.",
     "type": "array",
     "minItems": 2,
     "items": [
@@ -17,7 +17,7 @@
         "type": "object",
         "properties": {
           "@language": {
-            "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/Language.json"
+            "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/Language.json"
           }
         },
         "additionalProperties": false,

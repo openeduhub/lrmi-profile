@@ -1,8 +1,8 @@
 {
-    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/publisher.json",
+    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/creator.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Publisher",
-    "description": "The publisher of the educational resource",
+    "title": "Urheber:in",
+    "description": "Die Urheber(:innen) der Lernressource.",
     "type": "array",
     "items": {
       "type": "object",
@@ -11,12 +11,12 @@
           "title": "Type",
           "type": "string",
           "enum": [
-            "Organization"
+            "Person",
+            "Organisation"
           ]
         },
         "id": {
           "title": "URL",
-          "description": "The URL/URI of the publisher, preferably from GND, Wikidata or RoR.",
           "type": "string",
           "format": "uri"
         },
@@ -24,7 +24,7 @@
           "title": "Name",
           "type": "string",
           "_display": {
-            "placeholder": "The publisher's name"
+            "placeholder": "Name der Urheber:in"
           }
         }
       },

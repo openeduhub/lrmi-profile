@@ -1,0 +1,14 @@
+{
+    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/isBasedOn.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Basiert auf",
+    "description": "Ressourcen, aus denen die beschriebenen Lernressourcen abgeleitet wurden.",
+    "type": "array",
+    "items": {
+      "type": "string",
+      "format": "uri",
+      "_display": {
+        "placeholder": "Die URL einer Ressource, auf denen dieses OER basiert."
+      }
+    }
+  }

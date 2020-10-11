@@ -1,15 +1,15 @@
 {
-    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/audience.json",
+    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/audience.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Intended Audience",
-    "description": "The audience the educational resource is intended for.",
+    "description": "Die intendierte Zielgruppe für die Lernressource.",
     "type": "array",
     "items": {
       "type": "object",
       "_widget": {
         "type": "SkohubLookup",
         "options": {
-          "url": "https://skohub.io/acka47/lrmi-audience-role/heads/master/purl.org/dcx/lrmi-vocabs/educationalAudienceRole/"
+          "url": "http://w3id.org/openeduhub/vocabs/intendedEndUserRole/index.json"
         }
       },
       "properties": {
@@ -29,15 +29,15 @@
             "id": {
               "type": "string",
               "enum": [
-                "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/"
+                "http://w3id.org/openeduhub/vocabs/intendedEndUserRole/"
               ]
             }
           }
         },
         "prefLabel": {
-          "title": "The preferred label of the concept",
-          "description": "A localized string for prefLabel of a SKOS concept",
-          "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/LocalizedString.json"
+          "title": "Die bevorzugte Bezeichnung des Konzepts",
+          "description": "Der 'localized string' für das 'prefLabel' des SKOS-Konzepts",
+          "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schem/draft/schemas/oeh-schema/LocalizedString.json"
         }
       },
       "required": [
