@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/type.json",
+    "$id": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/type.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Type",
     "description": "Der Typ (rdf:type / @type) des Lernmaterials, basierend auf den Sub-Klassen von sdo:CreativeWork.",

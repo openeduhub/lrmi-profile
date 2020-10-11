@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/about.json",
+    "$id": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/about.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Subject",
     "description": "Das Thema der Lernressource, basierend auf der Fächersystematik des OpenEduHub",
@@ -32,7 +32,7 @@
         "prefLabel": {
           "title": "Die bevorzugte Bezeichnung des Konzepts",
           "description": "Der 'localized string' für das 'prefLabel' des SKOS-Konzepts",
-          "$ref": "https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/LocalizedString.json"
+          "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/LocalizedString.json"
         }
       },
       "required": [
