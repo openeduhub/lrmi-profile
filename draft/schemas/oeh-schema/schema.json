@@ -6,6 +6,7 @@
   "default": {
     "@context": [
       "https://w3id.org/kim/lrmi-profile/draft/context.jsonld",
+      {"oeh": "http://w3id.org/openeduhub/learning-resource-terms/"},
       {
         "@language": "de"
       }
@@ -39,11 +40,14 @@
     "audience": {
       "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/audience.json"
     },
-    "educationalContext": {
+    "oeh:educationalContext": {
       "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/educationalContext.json"
     },
     "educationalLevel": {
       "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/educationalLevel.json"
+    },
+    "oeh:schoolTopic": {
+      "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/schoolTopic.json"
     },
     "license": {
       "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/license.json"
