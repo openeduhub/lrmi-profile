@@ -1,8 +1,8 @@
 {
-    "$id": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/about.json",
+    "$id": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/educationalLevel.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Fach",
-    "description": "Das Fach der Lernressource, basierend auf der Fächersystematik des OpenEduHub",
+    "title": "Bildungsumfeld",
+    "description": "Ein passendes Bildungsumfeld für das Material, basierend auf einer OpenEduHub-Werteliste.",
     "type": "array",
     "items": {
       "type": "object",
@@ -16,7 +16,7 @@
         "id": {
           "type": "string",
           "format": "uri",
-          "pattern": "^https:\/\/w3id.org\/openeduhub\/vocabs\/discipline\/.*"
+          "pattern": "^https:\/\/w3id.org\/openeduhub\/vocabs\/educationalContext\/.*"
         },
         "inScheme": {
           "type": "object",
@@ -24,7 +24,7 @@
             "id": {
               "type": "string",
               "enum": [
-                "https://w3id.org/openeduhub/vocabs/discipline/index.json"
+                "https://w3id.org/openeduhub/vocabs/educationalContext/index.json"
               ]
             }
           }

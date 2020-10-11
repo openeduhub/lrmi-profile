@@ -54,6 +54,12 @@
     "audience": {
       "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/audience.json"
     },
+    "educationalContext": {
+      "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/educationalContext.json"
+    },
+    "educationalLevel": {
+      "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/educationalLevel.json"
+    },
     "isBasedOn": {
       "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/isBasedOn.json"
     },
