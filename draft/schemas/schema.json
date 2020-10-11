@@ -28,7 +28,7 @@
       "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/creator.json"
     },
     "description": {
-      "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/description.json"
+      "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/description.json"
     },
     "about": {
       "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/about.json"
