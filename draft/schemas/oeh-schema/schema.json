@@ -46,9 +46,6 @@
     "educationalLevel": {
       "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/educationalLevel.json"
     },
-    "oeh:schoolTopic": {
-      "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/schoolTopic.json"
-    },
     "license": {
       "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/license.json"
     },
