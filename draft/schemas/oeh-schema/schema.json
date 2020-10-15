@@ -3,19 +3,7 @@
   "title": "OER",
   "description": "OpenEduHub JSON schema zur Beschreibung von Open Educational Resources mit schema.org",
   "type": "object",
-  "default": {
-    "@context": [
-      "https://w3id.org/kim/lrmi-profile/draft/context.jsonld",
-      {"oeh": "http://w3id.org/openeduhub/learning-resource-terms/"},
-      {
-        "@language": "de"
-      }
-    ]
-  },
   "properties": {
-    "@context": {
-      "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/context-schema.json"
-    },
     "id": {
       "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/id.json"
     },
