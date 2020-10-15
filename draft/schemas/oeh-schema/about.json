@@ -16,7 +16,7 @@
         "id": {
           "type": "string",
           "format": "uri",
-          "pattern": "^https:\/\/w3id.org\/openeduhub\/vocabs\/discipline\/.*"
+          "pattern": "^http:\/\/w3id.org\/openeduhub\/vocabs\/discipline\/.*"
         },
         "inScheme": {
           "type": "object",
@@ -24,7 +24,7 @@
             "id": {
               "type": "string",
               "enum": [
-                "https://w3id.org/openeduhub/vocabs/discipline/index.json"
+                "http://w3id.org/openeduhub/vocabs/discipline/index.json"
               ]
             }
           }
