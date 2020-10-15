@@ -69,7 +69,6 @@
     }
   },
   "required": [
-    "@context",
     "id",
     "name"
   ]
