@@ -4,7 +4,7 @@
     "title": "JSON-LD Context",
     "description": "Der JSON-LD Kontext für die strukturierte Ressourcen-Beschreibung.",
     "type": "array",
-    "minItems": 2,
+    "minItems": 0,
     "items": [
       {
         "type": "string",
@@ -20,10 +20,7 @@
             "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/Language.json"
           }
         },
-        "additionalProperties": false,
-        "required": [
-          "@language"
-        ]
+        "additionalProperties": false
       }
     ],
     "additionalItems": true,
