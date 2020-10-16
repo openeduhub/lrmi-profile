@@ -45,7 +45,7 @@
     },
     "inLanguage": {
       "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/inLanguage.json"
-    },
+    }
   },
   "required": [
     "id",
