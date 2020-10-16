@@ -1,12 +1,12 @@
 {
-    "$id": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/license.json",
+    "$id": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/license.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "License",
-    "description": "A link to a CreativeCommons license",
+    "title": "Lizenz",
+    "description": "Ein Link zu der CreativeCommons Lizenz",
     "type": "string",
     "format": "uri",
     "pattern": "^https:\/\/creativecommons.org\/(licenses|licences|publicdomain)\/.*",
     "_display": {
-        "placeholder": "URL of the Creative Commons license"
+        "placeholder": "URL der Creative Commons Lizenz."
     }
 }

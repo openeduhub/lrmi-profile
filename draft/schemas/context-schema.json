@@ -1,10 +1,10 @@
 {
-    "$id": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/context-schema.json",
+    "$id": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/context-schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "JSON-LD Context",
-    "description": "The JSON-LD context for the structured resource descriptions",
+    "description": "Der JSON-LD Kontext für die strukturierte Ressourcen-Beschreibung.",
     "type": "array",
-    "minItems": 2,
+    "minItems": 0,
     "items": [
       {
         "type": "string",
@@ -17,13 +17,10 @@
         "type": "object",
         "properties": {
           "@language": {
-            "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/Language.json"
+            "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/Language.json"
           }
         },
-        "additionalProperties": false,
-        "required": [
-          "@language"
-        ]
+        "additionalProperties": false
       }
     ],
     "additionalItems": true,

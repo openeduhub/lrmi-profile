@@ -1,8 +1,8 @@
 {
-    "$id": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/about.json",
+    "$id": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/about.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Subject",
-    "description": "The subject of the learning resource, taken from Destatis classification",
+    "title": "Fach",
+    "description": "Das Fach der Lernressource, basierend auf der Fächersystematik des OpenEduHub",
     "type": "array",
     "items": {
       "type": "object",
@@ -16,7 +16,7 @@
         "id": {
           "type": "string",
           "format": "uri",
-          "pattern": "^https:\/\/w3id.org\/kim\/hochschulfaechersystematik\/.*"
+          "pattern": "^http:\/\/w3id.org\/openeduhub\/vocabs\/discipline\/.*"
         },
         "inScheme": {
           "type": "object",
@@ -24,15 +24,15 @@
             "id": {
               "type": "string",
               "enum": [
-                "https://w3id.org/kim/hochschulfaechersystematik/scheme"
+                "http://w3id.org/openeduhub/vocabs/discipline/index.json"
               ]
             }
           }
         },
         "prefLabel": {
-          "title": "The preferred label of the concept",
-          "description": "A localized string for prefLabel of a SKOS concept",
-          "$ref": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/LocalizedString.json"
+          "title": "Die bevorzugte Bezeichnung des Konzepts",
+          "description": "Der 'localized string' für das 'prefLabel' des SKOS-Konzepts",
+          "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/LocalizedString.json"
         }
       },
       "required": [

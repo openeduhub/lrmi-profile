@@ -1,8 +1,8 @@
 {
-    "$id": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/learningResourceType.json",
+    "$id": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/toolCategory.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Art der Lernressource",
-    "description": "Die Art der Lernressource basierend auf der OpenEduHub-Werteliste.",
+    "description": "Die Art des Tools basierend auf der OpenEduHub-Werteliste.",
     "type": "object",
     "properties": {
       "type": {
@@ -14,7 +14,7 @@
       "id": {
         "type": "string",
         "format": "uri",
-        "pattern": "^http:\/\/w3id.org\/openeduhub\/vocabs\/learningResourceType\/.*"
+        "pattern": "^http:\/\/w3id.org\/openeduhub\/vocabs\/toolCategory\/.*"
       },
       "inScheme": {
         "type": "object",
@@ -22,7 +22,7 @@
           "id": {
             "type": "string",
             "enum": [
-              "https://w3id.org/openeduhub/vocabs/learningResourceType/index.json"
+              "https://w3id.org/openeduhub/vocabs/toolCategory/index.json"
             ]
           }
         }

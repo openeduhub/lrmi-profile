@@ -16,7 +16,7 @@
         "id": {
           "type": "string",
           "format": "uri",
-          "pattern": "^https:\/\/w3id.org\/openeduhub\/vocabs\/educationalContext\/.*"
+          "pattern": "^http:\/\/w3id.org\/openeduhub\/vocabs\/educationalContext\/.*"
         },
         "inScheme": {
           "type": "object",
@@ -24,7 +24,7 @@
             "id": {
               "type": "string",
               "enum": [
-                "https://w3id.org/openeduhub/vocabs/educationalContext/index.json"
+                "http://w3id.org/openeduhub/vocabs/educationalContext/index.json"
               ]
             }
           }

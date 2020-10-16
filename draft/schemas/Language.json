@@ -1,8 +1,8 @@
 {
-    "$id": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/Language.json",
+    "$id": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/Language.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Language code",
-    "description": "An enumeration of ISO 639-1.conformant two-digit language codes.",
+    "title": "Sprachcode",
+    "description": "Eine Auflistung ISO 639-1 konformer zweistelliger Sprachcodes.",
     "type": "string",
     "enum": [
       "aa",
