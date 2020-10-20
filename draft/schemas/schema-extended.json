@@ -7,8 +7,8 @@
     "url": {
       "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/url.json"
     },
-    "title": {
-      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/title.json"
+    "name": {
+      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/name.json"
     },
     "creator": {
       "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/creator.json"
