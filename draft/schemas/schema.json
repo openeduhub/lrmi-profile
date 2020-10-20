@@ -7,11 +7,8 @@
     "url": {
       "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/url.json"
     },
-    "title": {
-      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/title.json"
-    },
-    "creator": {
-      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/creator.json"
+    "name": {
+      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/name.json"
     },
     "description": {
       "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/description.json"
@@ -22,29 +19,14 @@
     "learningResourceType": {
       "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/learningResourceType.json"
     },
-    "sourceContentType": {
-      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/sourceContentType.json"
-    },
-    "toolCategory": {
-      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/toolCategory.json"
-    },
-    "intendedEndUserRole": {
-      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/intendedEndUserRole.json"
-    },
-    "oeh:educationalContext": {
-      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/educationalContext.json"
-    },
-    "educationalLevel": {
-      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/educationalLevel.json"
-    },
     "license": {
       "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/license.json"
     },
-    "dateCreated": {
-      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/dateCreated.json"
+    "creator": {
+      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/creator.json"
     },
-    "inLanguage": {
-      "$ref": "https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/inLanguage.json"
+    "email":{
+      "$ref":"https://raw.githubusercontent.com/openeduhub/lrmi-profile/wlo-schema/draft/schemas/email.json"
     }
   },
   "required": [
