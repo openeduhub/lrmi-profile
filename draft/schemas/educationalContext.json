@@ -24,7 +24,7 @@
             "id": {
               "type": "string",
               "enum": [
-                "http://w3id.org/openeduhub/vocabs/educationalContext/index.json"
+                "http://w3id.org/openeduhub/vocabs/educationalContext/"
               ]
             }
           }
