@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/educationalLevel.json",
+    "$id": "https://raw.githubusercontent.com/sroertgen/lrmi-profile/oeh-schema/draft/schemas/oeh-schema/educationalContext.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Bildungsumfeld",
     "description": "Ein passendes Bildungsumfeld für das Material, basierend auf einer OpenEduHub-Werteliste.",
