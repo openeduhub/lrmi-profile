@@ -245,24 +245,26 @@ Im Folgenden wird die Struktur eines OER-Metadatensatzes beschrieben.
 Nebst einer Kurzbeschreibung wird angegeben, ob der Wert eine Pflichtangabe ist und um welchen Typ es sich handelt.
 Wenn erforderlich wird der Wertebereich festgelegt und es werden kurze Beispiele gegeben.
 
-<section data-dfn-for="@context">
+<section data-dfn-for="Metadatenschema">
+### <dfn>Metadatenschema</dfn>
 
-### <dfn>@context</dfn>
+Hinweis auf das verwendete Metadatenschema.
 
-Die `@context`-Property enthält einen Array mit einem URI-String zur Referenzierung des [JSON-LD-Kontext](https://www.w3.org/TR/json-ld/#the-context) des Profils: `https://w3id.org/kim/lrmi-profile/draft/context.jsonld`. Außerdem mit einem JSON-Objekt zur Angabe der im JSON-Dokument genutzten Sprache mittels dem JSON-LD-Keyword `@language` und einem [[?BCP47]] Sprachcode als Wert.
+<dl>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`string`</dd>
+    <dt>Alfresco Property</dt>
+    <dd>cm:edu_metadataset</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+</dl>
 
-Für ein deutschsprachiges Metadatendokument sieht es z.B. wie folgt aus:
+</section>
 
-```json
-{
-    "@context":[
-      "https://w3id.org/kim/lrmi-profile/draft/context.jsonld",
-      {
-        "@language":"de"
-      }
-    ]
-  }
-```
+<section data-dfn-for="Beschreibendes">
+### <dfn>Beschreibendes</dfn>
 
 <dl>
 <dt>Pflichtfeld</dt>
@@ -276,421 +278,383 @@ Für ein deutschsprachiges Metadatendokument sieht es z.B. wie folgt aus:
 <dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/context-schema.json">JSON Schema</a></dd>
 </dl>
 
-</section>
+<section data-dfn-for="Cover">
+### <dfn>Cover</dfn>
 
-<section data-dfn-for="id">
-
-### <dfn>id</dfn>
-
-Die URL, durch den die Ressource identifiziert wird.
-Auf dieser URL MUSS die Ressource abrufbar sein.
-Es SOLL keine URL sein, von der aus nur auf die Ressource verwiesen wird.
+Ein Vorschaubild zur Ressource.
 
 <dl>
-<dt>Pflichtfeld</dt>
-<dd>ja</dd>
-<dt>Typ</dt>
-<dd>`string` (URI)</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/id.json">JSON Schema</a></dd>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`string`</dd>
+    <dt>Alfresco Property</dt>
+    <dd>preview</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
 </dl>
 
 </section>
 
-<section data-dfn-for="type">
+<section data-dfn-for="Kurztitel für Suchkachel">
+### <dfn>Kurztitel für Suchkachel</dfn>
 
-### <dfn>type</dfn>
-
-Art der Ressource. MUSS den Wert `LearningResource` enthalten. KANN weitere Werte aus den Unterklassen von `https://schema.org/CreativeWork` enthalten.
-
+Redaktionell gekürzter Titel, für Anzeige von Suchergebnissen, Brotkrumen-Navigation oder Übersichten. Kurzbeschreibung
+der Sammlung.
 
 <dl>
-<dt>Pflichtfeld</dt>
-<dd>ja</dd>
-<dt>Typ</dt>
-<dd>`array[string]`</dd>
-<dt>Werte</dt>
-<dd>`LearningResource` und Unterklassen von CreativeWork</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/type.json">JSON Schema</a></dd>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`string`</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`cclom:collectionshorttitle`</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+</dl>
+</section>
+
+<section data-dfn-for="Voller Titel">
+### <dfn>Voller Titel</dfn>
+
+Titel des Bildungsinhalts.
+
+<dl>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`string`</dd>
+    <dt>Alfresco Property</dt>
+    <dd>cclom:title</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
 </dl>
 
 </section>
 
-<section data-dfn-for="name">
+<section data-dfn-for="Beschreibung">
+### <dfn>Beschreibung</dfn>
 
-### <dfn>name</dfn>
-
-Titel der Ressource.
+Eine Beschreibung des Inhalts.
 
 <dl>
-<dt>Pflichtfeld</dt>
-<dd>ja</dd>
-<dt>Typ</dt>
-<dd>`string`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/name.json">JSON Schema</a></dd>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`string`</dd>
+    <dt>Alfresco Property</dt>
+    <dd>cclom:general_description</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
 </dl>
 
 </section>
 
-<section data-dfn-for="creator">
+<section data-dfn-for="Status">
+### <dfn>Status</dfn>
 
-### <dfn>creator</dfn>
-
-Urheber:innen der Ressource. MUSS ein oder mehrere JSON-Objekte enthalten, die wiederum `type` und `name` Properties aufweisen MÜSSEN und `id` – mit einer URI-Referenz zu [[?ORCID]], [[?GND]], [[?Wikidata]] oder [[?ROR]] – aufweisen SOLLEN sowie – bei Personen – eine <a>affiliation</a>-Angabe enthalten KANN. Der Name (`name`) SOLL als vollständiger Name ohne akademischen Titeln angegeben werden, bei Namen aus dem deutschen Sprachraum z.B. in der Form "Vorname Nachname".
+Status eines Materials (Entwurf, Final, Überarbeitet, Nicht verfügbar)
 
 <dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dd>
-<dd>`array[object]`</dd>
-<dt>Werte</dt>
-<dd>JSON-Objekt mit Properties `type` und `name`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/creator.json">JSON Schema</a></dd>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`array[object]`</dd>
+    <dt>Werte</dt>
+    <dd>TODO in SKOS</dd>
+    <dt>Alfresco Property</dt>
+    <dd>cclom:status</dd>
+    <dt>Validierung</dt>
+    <dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/type.json">JSON Schema</a></dd>
 </dl>
 
 </section>
 
-<section data-dfn-for="contributor">
+<section data-dfn-for="URL">
+### <dfn>URL</dfn>
 
-### <dfn>contributor</dfn>
-
-Sonstige Beitragende zu der Ressource. MUSS ein oder mehrere JSON-Objekte enthalten, die wiederum `type` und `name` Properties aufweisen MÜSSEN und `id` – mit einer URI-Referenz zu [[?ORCID]], [[?GND]], [[?Wikidata]] oder [[?ROR]] – aufweisen SOLLEN sowie – bei Personen – eine <a>affiliation</a>-Angabe enthalten KANN. Der Name (`name`) SOLL als vollständiger Name ohne akademischen Titeln angegeben werden, bei Namen aus dem deutschen Sprachraum z.B. in der Form "Vorname Nachname".
+Die Url der Ressource.
 
 <dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dd>
-<dd>`array[object]`</dd>
-<dt>Werte</dt>
-<dd>JSON-Objekt mit Properties `type` und `name`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/contributor.json">JSON Schema</a></dd>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`string` (URI)</dd>
+    <dt>Alfresco Property</dt>
+    <dd>ccm:wwwurl</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
 </dl>
 
 </section>
 
-<section data-dfn-for="affiliation">
-
-### <dfn>affiliation</dfn>
-
-Die Affiliierung einer beitragenden Person im Kontext der Erstellung der Lernressource. MUSS ein JSON-Objekt enthalten, das wiederum `type` und `name` Properties aufweisen MUSS und `id` – mit einer URI-Referenz zu  [[?GND]], [[?Wikidata]] oder [[?ROR]] – aufweisen SOLL.
+<section data-dfn-for="Sprache">
+### <dfn>Sprache</dfn>
+Die Sprache, in der die Ressource verfassst ist.
 
 <dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dd>
-<dd>`object`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/affiliation.json">JSON Schema</a></dd>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`array[string]`</dd>
+    <dt>Alfresco Property</dt>
+    <dd>cclom:general_language</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
 </dl>
 
 </section>
 
-<section data-dfn-for="description">
-
-
-### <dfn>description</dfn>
-
-Beschreibung der Ressource.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`string`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/description.json">JSON Schema</a></dd>
-</dl>
-
+<!-- end section Beschreibung -->
 </section>
 
-<section data-dfn-for="about">
+<section data-dfn-for="Typisierung">
+### <dfn>Typisierung</dfn>
 
-### <dfn>about</dfn>
+<section data-dfn-for="Kategorie des Inhalts">
 
-Fach/Thema der Inhalte.
-MUSS ein oder mehrere JSON-Objekte enthalten, die eine Property `id` mit einem URI aus der
-[[Hochschulfächersystematik]] ODER aus der [[Schulfächerliste]] der DINI-AG-KIM
-enthalten MÜSSEN.
+### <dfn>Kategorie des Inhalts</dfn>
+
+Hauptklassifikation des Inhalts = Metadatenschema
 
 <dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`array[object]`</dd>
-<dt>Werte</dt>
-<dd>Werte aus [[Hochschulfächersystematik]] oder [[Schulfächerliste]] der DINI-AG-KIM</a></dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/about.json">JSON Schema</a></dd>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`object`</dd>
+    <dt>Werte</dt>
+    <dd>TODO SKOS Werteliste</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`ccm:objecttype`</dd>
+    <dt>Kardinalität</dt>
+    <dd>1</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+    <dt>Interface-Ansicht</dt>
+    <dd>TODO</dd>
 </dl>
-
 </section>
 
-<section data-dfn-for="keywords">
+<section data-dfn-for="Dateiformat Mimetyp">
+### <dfn>Dateiformat Mimetyp</dfn>
 
-### <dfn>keywords</dfn>
-
-Schlagworte zur Beschreibung des Inhalts der Ressource.
+Dateiformat einer Ressource, z.B. .doc
 
 <dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`array[string]`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/keywords.json">JSON Schema</a></dd>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`object`</dd>
+    <dt>Werte</dt>
+    <dd>TODO SKOS Werteliste</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`mimetype / cclom:format`</dd>
+    <dt>Kardinalität</dt>
+    <dd>1</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+    <dt>Interface-Ansicht</dt>
+    <dd>TODO</dd>
 </dl>
-
 </section>
 
-<section data-dfn-for="license">
+<section data-dfn-for="Dateiformat für Editorwahl">
+### <dfn>Dateiformat für Editorwahl</dfn>
 
-### <dfn>license</dfn>
+"für User verständlicher Dateityp, der den Editor auswählen hilft
+z.B.
 
-Lizenz der Ressource.  MUSS ein JSON-Objekt enthalten, das eine Property `id` mit einem URI als Wert enthält, der auf eine Creative Commons-Lizenz, GNU, Apache, MIT oder BSD verlinkt. Für die URI-Werteliste siehe [hier](https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/license.json).
+Moodle-Zip
+PDF-Datei
+QTI-Zip"
 
 <dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`object`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/license.json">JSON Schema</a></dd>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`object`</dd>
+    <dt>Werte</dt>
+    <dd>TODO SKOS Werteliste</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`ccm:ccressourcetype`</dd>
+    <dt>Kardinalität</dt>
+    <dd>1</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+    <dt>Interface-Ansicht</dt>
+    <dd></dd>
 </dl>
-
 </section>
 
-<section data-dfn-for="image">
+<section data-dfn-for="Bildungsstufe">
+### <dfn>Bildungsstufe</dfn>
 
-### <dfn>image</dfn>
-
-Thumbnail der Ressource.
+Verweis auf den Bildungsbereich, mit dem die Ressource in Verbindung steht.
 
 <dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`string` (URI)</dd>
-<dt>Werte</dt>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/image.json">JSON Schema</a></dd>
-<dd></dd>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`array[object]`</dd>
+    <dt>Werte</dt>
+    <dd>"http://w3id.org/openeduhub/vocabs/educationalContext/ KITA-Projekt wünscht sich zusätzlich HORT"</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`ccm:educationalcontext`</dd>
+    <dt>Kardinalität</dt>
+    <dd>n</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+    <dt>Interface-Ansicht</dt>
+    <dd></dd>
 </dl>
-
 </section>
 
-<section data-dfn-for="dateCreated">
+<section data-dfn-for="Alter">
+### <dfn>Alter</dfn>
 
-### <dfn>dateCreated</dfn>
-
-Erstellungsdatum der Ressource. MUSS einer Datumsangabe gemäß [[!ISO8601]] entsprechen.
+Verweis auf den Bildungsbereich, mit dem die Ressource in Verbindung steht.
 
 <dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`Date`</dd>
-<dt>Werte</dt>
-<dd>[[!ISO8601]]</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/dateCreated.json">JSON Schema</a></dd>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`object`</dd>
+    <dt>Werte</dt>
+    <dd>0-99</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`ccm:educationaltypicalagerange`</dd>
+    <dt>Kardinalität</dt>
+    <dd>n</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+    <dt>Interface-Ansicht</dt>
+    <dd></dd>
 </dl>
+</section>
 
+<section data-dfn-for="FSK">
+### <dfn>FSK</dfn>
+
+FSK-Freigabe der Ressource.
+
+<dl>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`array[string]`</dd>
+    <dt>Werte</dt>
+    <dd>http://w3id.org/openeduhub/vocabs/fskRating/</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`TODO`</dd>
+    <dt>Kardinalität</dt>
+    <dd>n</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+    <dt>Interface-Ansicht</dt>
+    <dd></dd>
+</dl>
+</section>
+
+<section data-dfn-for="Fach-/Sachgebiet">
+### <dfn>Fach-/Sachgebiet</dfn>
+
+Verweis auf ein oder mehrere Schulfächer mit denen diese Ressource in Verbindung steht.
+
+<dl>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`array[object]`</dd>
+    <dt>Werte</dt>
+    <dd>http://w3id.org/openeduhub/vocabs/fskRating/</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`ccm:taxonid`</dd>
+    <dt>Kardinalität</dt>
+    <dd>n</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+    <dt>Interface-Ansicht</dt>
+    <dd></dd>
+</dl>
+</section>
+
+<section data-dfn-for="Feste Schlagworte">
+### <dfn>Feste Schlagworte</dfn>
+
+Schlagworte aus einem kontrollierten Schlagwortverzeichnis.
+
+<dl>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`array[object]`</dd>
+    <dt>Werte</dt>
+    <dd>http://w3id.org/openeduhub/vocabs/fskRating/</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`cclom:general_keyword`</dd>
+    <dt>Kardinalität</dt>
+    <dd>n</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+    <dt>Interface-Ansicht</dt>
+    <dd></dd>
+</dl>
+</section>
+
+<section data-dfn-for="Freie Schlagworte">
+### <dfn>Freie Schlagworte</dfn>
+
+Freie Schlagworte.
+
+<dl>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`array[object]`</dd>
+    <dt>Werte</dt>
+    <dd>http://w3id.org/openeduhub/vocabs/fskRating/</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`cclom:general_keyword`</dd>
+    <dt>Kardinalität</dt>
+    <dd>n</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+    <dt>Interface-Ansicht</dt>
+    <dd></dd>
+</dl>
+</section>
+
+<!-- end section Typisierung -->
+</section>
+
+<section data-dfn-for="Pädagogisch">
+### <dfn>Pädagogisch</dfn>
+
+<section data-dfn-for="Zielgruppe">
+### <dfn>Zielgruppe</dfn>
+
+Verweis auf die bevorzugte Zielgruppe für die Ressource, z.B. für Lernende versus (Traineranleitung) für Lehrende.
+
+<dl>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`array[object]`</dd>
+    <dt>Werte</dt>
+    <dd>http://w3id.org/openeduhub/vocabs/fskRating/</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`ccm:educationalintendedenduserrole`</dd>
+    <dt>Kardinalität</dt>
+    <dd>n</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+    <dt>Interface-Ansicht</dt>
+    <dd></dd>
+</dl>
 </section>
 
 
-<section data-dfn-for="datePublished">
-
-### <dfn>datePublished</dfn>
-
-Publikationssdatum der Ressource. MUSS einer Datumsangabe gemäß [[!ISO8601]] entsprechen.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`Date`</dd>
-<dt>Werte</dt>
-<dd>[[!ISO8601]]</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/datePublished.json">JSON Schema</a></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="inLanguage">
-
-### <dfn>inLanguage</dfn>
-
-Sprache(n) der Ressource. MUSS den Sprachcodes gemäß [[!BCP47]] entsprechen.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`array[string]`</dd>
-<dt>Werte</dt>
-<dd>[[!BCP47]]</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/inLanguage.json">JSON Schema</a></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="learningResourceType">
-
-### <dfn>learningResourceType</dfn>
-
-Art des Lernmittels. MUSS ein oder mehrere JSON-Objekte enthalten, die eine Property `id` mit einem URI aus [[HCRT]] ODER [[OEHRT]] als URI enthalten MÜSSEN.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>ja</dd>
-<dt>Typ</dt>
-<dd>`array[object]`</dd>
-<dt>Werte</dt>
-<dd>JSON-Object mit `id`-Wert aus [[HCRT]] oder [[OEHRT]]</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/learningResourceType.json">JSON Schema</a></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="provider">
-
-### <dfn>publisher</dfn>
-
-Die Organisation, über die die OER veröffentlicht wurde. MUSS ein oder mehrere JSON-Objekte enthalten, die mindestens `type` mit value `Organization` und `name` Properties aufweisen.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>ja</dd>
-<dt>Typ</dd>
-<dd>`array[object]`</dd>
-<dt>Werte</dt>
-<dd>JSON-Objekt mit Properties `type` und `name`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/publisher.json">JSON Schema</a></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="audience">
-
-### <dfn>audience</dfn>
-
-Zielgruppe(n) des Angebotes. MUSS einer *Educational Audience Role* von [[!LRMI]] entsprechen.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`array[string (URI)]` </dd>
-<dt>Werte</dt>
-<dd><a href="http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/">LRMI Educational Audience Roles</a></dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/audience.json">JSON Schema</a></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="encoding">
-
-### <dfn>encoding</dfn>
-
-Möglichkeiten zum Download der Ressource.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`array[object]` </dd>
-<dt>Werte</dt>
-<dd>JSON-Objekt, das `"type": "MediaObject"` sowie die Property `contentUrl` oder `embedUrl` enthalten MUSS und folgende weitere Properties enthalten KANN: `contentSize`, `embedUrl`, `sha256`, `bitrate` sowie `encodingFormat`, das bei Verwendung Werte aus [[IANA-MEDIA-TYPES]] enthalten MUSS.</a></dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/encoding.json">JSON Schema</a></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="isBasedOn">
-
-### <dfn>isBasedOn</dfn>
-
-Verweis auf andere Ressource, von der die beschriebene Ressource ein Derivat ist.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`array[object]`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/isBasedOn.json">JSON Schema</a></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="isPartOf">
-
-### <dfn>isPartOf</dfn>
-
-Verweis auf andere Ressource(n), von der/denen die beschriebene Ressource ein Teil ist. MUSS ein oder mehrere JSON-Objekte enthalten, die `id` Property aufweisen MÜSSEN und weitere Properties enthalten KÖNNEN.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`array[object]`</dd>
-<dt>Werte</dt>
-<dd>JSON-Objekt mit Property `id`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/isPartOf.json">JSON Schema</a></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="hasPart">
-
-### <dfn>hasPart</dfn>
-
-Verweis auf andere Ressource(n), die von der die beschriebene Ressource ein Teil ist/sind. MUSS ein oder mehrere JSON-Objekte enthalten, die `id` Property aufweisen MÜSSEN und weitere Properties enthalten KÖNNEN.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`array[object]`</dd>
-<dt>Werte</dt>
-<dd>JSON-Objekt mit Property `id`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/hasPart.json">JSON Schema</a></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="mainEntityOfPage">
-
-### <dfn>mainEntityOfPage</dfn>
-
-In diesem Feld können die Struktur-Metadaten ausgeführt werden, welche den eingebetten Strukturkontext der bereitgestellten Metadaten erfassen:
-
-- `id` zur Angabe der Landing-Page der Metadaten
-- `provider` zur Angabe des Metadaten-Providers mit einem dazugehörigen Objekt, das `id`,`type` und `name` des Providers angibt
-- `dateCreated` zur Angabe des Erstellungsdatums der Metadaten
-- `dateModified` zur Angabe des Änderungsdatum der Metadaten
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`array[object]`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/mainEntityOfPage.json">JSON Schema</a></dd>
-</dl>
-
+<!-- End section pädagogisch -->
 </section>
 
 </section>
