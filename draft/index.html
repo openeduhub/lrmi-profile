@@ -686,7 +686,7 @@ Videos (ggf. redundant ) speichern.
 <dt>Typ</dt>
 <dd>`array[object]`</dd>
 <dt>Werte</dt>
-<dd>https://vocabs.openeduhub.de/w3id.org/openeduhub/vocabs/oeh-topics/5e40e372-735c-4b17-bbf7-e827a5702b57.html</dd>
+<dd>`duration`</dd>
 <dt>Alfresco Property</dt>
 <dd>`cclom:typicallearningtime`</dd>
 <dt>Kardinalität</dt>
@@ -694,7 +694,7 @@ Videos (ggf. redundant ) speichern.
 <dt>Validierung</dt>
 <dd>TODO</dd>
 <dt>Interface-Ansicht</dt>
-<dd></dd>
+<dd>Langformular</dd>
 </dl>
 </section>
 
@@ -707,11 +707,106 @@ Abspieldauer einer Ressource.
 <dt>Pflichtfeld</dt>
 <dd>nein</dd>
 <dt>Typ</dt>
-<dd>`array[object]`</dd>
+<dd>`duration`</dd>
 <dt>Werte</dt>
 <dd>TODO</dd>
 <dt>Alfresco Property</dt>
 <dd>`cclom:duration`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+</section>
+
+<section data-dfn-for="Sprachniveau">
+### <dfn>Sprachniveau</dfn>
+
+Benötigtes Sprachniveau nach GER zur Bearbeitung einer Ressource.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd>http://w3id.org/openeduhub/vocabs/languageLevel/</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:oeh_languageLevel`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+</section>
+
+<section data-dfn-for="Vorkenntnisse (Kompetenzen)">
+### <dfn>Vorkenntnisse (Kompetenzen)</dfn>
+
+Benötigte Vorkenntnisse, die zur Bearbeitung der Ressource nötig sind.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd>Momentan: http://w3id.org/openeduhub/vocabs/digitalCompetencies/</dd>
+<dt>Alfresco Property</dt>
+<dd>`TODO`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+</section>
+
+<section data-dfn-for="Lernziele (Kompetenzen)">
+### <dfn>Lernziele (Kompetenzen)</dfn>
+
+"wenn möglich die Kompetenzen in der digitalen Welt abbilden - oder das DEKRA Medienkompetenzschema nutzen
+
+Verweis auf ein Curriculum, das mit dieser Ressource in Verbindung steht."
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd>Momentan: http://w3id.org/openeduhub/vocabs/digitalCompetencies/</dd>
+<dt>Alfresco Property</dt>
+<dd>`TODO`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+</section>
+
+<section data-dfn-for="Lernzielkontrolle (Kompetenzen)">
+### <dfn>Lernziele (Kompetenzen)</dfn>
+
+Das beschriebene Item soll die Kompetenz oder das Lernergebnis bewerten, das durch den referenzierten Begriff definiert
+wird.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd>Momentan: http://w3id.org/openeduhub/vocabs/digitalCompetencies/</dd>
+<dt>Alfresco Property</dt>
+<dd>`TODO`</dd>
 <dt>Kardinalität</dt>
 <dd>n</dd>
 <dt>Validierung</dt>
