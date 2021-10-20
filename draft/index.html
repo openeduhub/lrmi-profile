@@ -262,32 +262,20 @@ Hinweis auf das verwendete Metadatenschema.
 <section data-dfn-for="Beschreibendes">
 ### <dfn>Beschreibendes</dfn>
 
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>ja</dd>
-<dt>Typ</dt>
-<dd>`array[string/object]`</dd>
-<dt>Werte</dt>
-<dd>`https://w3id.org/kim/lrmi-profile/draft/context.jsonld`</dd>
-<dd>`object`</dd>
-<dt>Validierung</dt>
-<dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/context-schema.json">JSON Schema</a></dd>
-</dl>
-
 <section data-dfn-for="Cover">
 ### <dfn>Cover</dfn>
 
 Ein Vorschaubild zur Ressource.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`string`</dd>
-    <dt>Alfresco Property</dt>
-    <dd>preview</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`string`</dd>
+<dt>Alfresco Property</dt>
+<dd>`preview`</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
 </dl>
 
 </section>
@@ -299,14 +287,14 @@ Redaktionell gekürzter Titel, für Anzeige von Suchergebnissen, Brotkrumen-Navi
 der Sammlung.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`string`</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`cclom:collectionshorttitle`</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`string`</dd>
+<dt>Alfresco Property</dt>
+<dd>`cclom:collectionshorttitle`</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
 </dl>
 </section>
 
@@ -316,14 +304,14 @@ der Sammlung.
 Titel des Bildungsinhalts.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`string`</dd>
-    <dt>Alfresco Property</dt>
-    <dd>cclom:title</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`string`</dd>
+<dt>Alfresco Property</dt>
+<dd>`cclom:title`</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
 </dl>
 
 </section>
@@ -334,14 +322,14 @@ Titel des Bildungsinhalts.
 Eine Beschreibung des Inhalts.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`string`</dd>
-    <dt>Alfresco Property</dt>
-    <dd>cclom:general_description</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`string`</dd>
+<dt>Alfresco Property</dt>
+<dd>`cclom:general_description`</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
 </dl>
 
 </section>
@@ -352,16 +340,16 @@ Eine Beschreibung des Inhalts.
 Status eines Materials (Entwurf, Final, Überarbeitet, Nicht verfügbar)
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`array[object]`</dd>
-    <dt>Werte</dt>
-    <dd>TODO in SKOS</dd>
-    <dt>Alfresco Property</dt>
-    <dd>cclom:status</dd>
-    <dt>Validierung</dt>
-    <dd><a href="https://dini-ag-kim.github.io/lrmi-profile/draft/schemas/type.json">JSON Schema</a></dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`string`</dd>
+<dt>Werte</dt>
+<dd>TODO in SKOS</dd>
+<dt>Alfresco Property</dt>
+<dd>`cclom:status``</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
 </dl>
 
 </section>
@@ -372,14 +360,14 @@ Status eines Materials (Entwurf, Final, Überarbeitet, Nicht verfügbar)
 Die Url der Ressource.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`string` (URI)</dd>
-    <dt>Alfresco Property</dt>
-    <dd>ccm:wwwurl</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`string` (URI)</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:wwwurl`</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
 </dl>
 
 </section>
@@ -414,20 +402,20 @@ Die Sprache, in der die Ressource verfassst ist.
 Hauptklassifikation des Inhalts = Metadatenschema
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`object`</dd>
-    <dt>Werte</dt>
-    <dd>TODO SKOS Werteliste</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`ccm:objecttype`</dd>
-    <dt>Kardinalität</dt>
-    <dd>1</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
-    <dt>Interface-Ansicht</dt>
-    <dd>TODO</dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`object`</dd>
+<dt>Werte</dt>
+<dd>TODO SKOS Werteliste</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:objecttype`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd>TODO</dd>
 </dl>
 </section>
 
@@ -437,20 +425,20 @@ Hauptklassifikation des Inhalts = Metadatenschema
 Dateiformat einer Ressource, z.B. .doc
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`object`</dd>
-    <dt>Werte</dt>
-    <dd>TODO SKOS Werteliste</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`mimetype / cclom:format`</dd>
-    <dt>Kardinalität</dt>
-    <dd>1</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
-    <dt>Interface-Ansicht</dt>
-    <dd>TODO</dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`object`</dd>
+<dt>Werte</dt>
+<dd>TODO SKOS Werteliste</dd>
+<dt>Alfresco Property</dt>
+<dd>`mimetype / cclom:format`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd>TODO</dd>
 </dl>
 </section>
 
@@ -465,20 +453,20 @@ PDF-Datei
 QTI-Zip"
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`object`</dd>
-    <dt>Werte</dt>
-    <dd>TODO SKOS Werteliste</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`ccm:ccressourcetype`</dd>
-    <dt>Kardinalität</dt>
-    <dd>1</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
-    <dt>Interface-Ansicht</dt>
-    <dd></dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`object`</dd>
+<dt>Werte</dt>
+<dd>TODO SKOS Werteliste</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:ccressourcetype`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
 </dl>
 </section>
 
@@ -488,20 +476,21 @@ QTI-Zip"
 Verweis auf den Bildungsbereich, mit dem die Ressource in Verbindung steht.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`array[object]`</dd>
-    <dt>Werte</dt>
-    <dd>"http://w3id.org/openeduhub/vocabs/educationalContext/ KITA-Projekt wünscht sich zusätzlich HORT"</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`ccm:educationalcontext`</dd>
-    <dt>Kardinalität</dt>
-    <dd>n</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
-    <dt>Interface-Ansicht</dt>
-    <dd></dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd><a href="http://w3id.org/openeduhub/vocabs/educationalContext/">Educational Context</a></dd>
+<dd>KITA-Projekt wünscht sich zusätzlich HORT"</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:educationalcontext`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
 </dl>
 </section>
 
@@ -511,20 +500,20 @@ Verweis auf den Bildungsbereich, mit dem die Ressource in Verbindung steht.
 Verweis auf den Bildungsbereich, mit dem die Ressource in Verbindung steht.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`object`</dd>
-    <dt>Werte</dt>
-    <dd>0-99</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`ccm:educationaltypicalagerange`</dd>
-    <dt>Kardinalität</dt>
-    <dd>n</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
-    <dt>Interface-Ansicht</dt>
-    <dd></dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`object`</dd>
+<dt>Werte</dt>
+<dd>0-99</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:educationaltypicalagerange`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
 </dl>
 </section>
 
@@ -534,20 +523,20 @@ Verweis auf den Bildungsbereich, mit dem die Ressource in Verbindung steht.
 FSK-Freigabe der Ressource.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`array[string]`</dd>
-    <dt>Werte</dt>
-    <dd>http://w3id.org/openeduhub/vocabs/fskRating/</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`TODO`</dd>
-    <dt>Kardinalität</dt>
-    <dd>n</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
-    <dt>Interface-Ansicht</dt>
-    <dd></dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[string]`</dd>
+<dt>Werte</dt>
+<dd><a href="http://w3id.org/openeduhub/vocabs/fskRating/">FSK Rating</a></dd>
+<dt>Alfresco Property</dt>
+<dd>`TODO`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
 </dl>
 </section>
 
@@ -557,20 +546,20 @@ FSK-Freigabe der Ressource.
 Verweis auf ein oder mehrere Schulfächer mit denen diese Ressource in Verbindung steht.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`array[object]`</dd>
-    <dt>Werte</dt>
-    <dd>http://w3id.org/openeduhub/vocabs/fskRating/</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`ccm:taxonid`</dd>
-    <dt>Kardinalität</dt>
-    <dd>n</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
-    <dt>Interface-Ansicht</dt>
-    <dd></dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd><a href="http://w3id.org/openeduhub/vocabs/discipline/"></a>Schulfach</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:taxonid`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
 </dl>
 </section>
 
@@ -580,20 +569,20 @@ Verweis auf ein oder mehrere Schulfächer mit denen diese Ressource in Verbindun
 Schlagworte aus einem kontrollierten Schlagwortverzeichnis.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`array[object]`</dd>
-    <dt>Werte</dt>
-    <dd>http://w3id.org/openeduhub/vocabs/fskRating/</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`cclom:general_keyword`</dd>
-    <dt>Kardinalität</dt>
-    <dd>n</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
-    <dt>Interface-Ansicht</dt>
-    <dd></dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`cclom:general_keyword`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
 </dl>
 </section>
 
@@ -603,20 +592,20 @@ Schlagworte aus einem kontrollierten Schlagwortverzeichnis.
 Freie Schlagworte.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`array[object]`</dd>
-    <dt>Werte</dt>
-    <dd>http://w3id.org/openeduhub/vocabs/fskRating/</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`cclom:general_keyword`</dd>
-    <dt>Kardinalität</dt>
-    <dd>n</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
-    <dt>Interface-Ansicht</dt>
-    <dd></dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`cclom:general_keyword`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
 </dl>
 </section>
 
@@ -632,20 +621,20 @@ Freie Schlagworte.
 Verweis auf die bevorzugte Zielgruppe für die Ressource, z.B. für Lernende versus (Traineranleitung) für Lehrende.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`array[object]`</dd>
-    <dt>Werte</dt>
-    <dd>http://w3id.org/openeduhub/vocabs/fskRating/</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`ccm:educationalintendedenduserrole`</dd>
-    <dt>Kardinalität</dt>
-    <dd>n</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
-    <dt>Interface-Ansicht</dt>
-    <dd></dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:educationalintendedenduserrole`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
 </dl>
 </section>
 
