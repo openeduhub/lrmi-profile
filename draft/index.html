@@ -2,36 +2,32 @@
 <html lang='de'>
 <head>
     <meta charset='utf-8'>
-    <title>Allgemeines Metadatenprofil für Bildungsressourcen</title>
+    <title>Metadatenprofil edu-sharing</title>
     <script src='https://w3c.github.io/respec/builds/respec-dini.js' async class='remove'></script>
     <script class='remove'>
         // ReSpec-Konfiguration
         // Dokumentation: https://github.com/w3c/respec/wiki/Configuration-(respecConfig)
         var respecConfig = {
             editors: [{
-                name: "Adrian Pohl",
-                company: "hbz",
-                companyURL: "https://www.hbz-nrw.de/"
+                name: "Annett Zobel",
+                company: "edu-sharing Network e.V.",
+                companyURL: "https://edu-sharing-network.org/"
             }, {
-                name: "Axel Klinger",
-                company: "TIB",
-                companyURL: "https://www.tib.eu/"
-            }, {
-                name: "Fabian Steeg",
-                company: "hbz",
-                companyURL: "https://www.hbz-nrw.de/"
-            }, {
-                name: "Mirjan Hoffmann",
-                company: "TIB",
-                companyURL: "https://www.tib.eu/"
+                name: "Matthias Hupfer",
+                company: "metaVentis",
+                companyURL: "https://edu-sharing.com/metaventis/"
             }, {
                 name: "Steffen Rörtgen",
                 company: "GWDG",
                 companyURL: "https://www.gwdg.de/"
             }, {
-                name: "Tobias Bülte",
-                company: "hbz",
-                companyURL: "https://www.hbz-nrw.de/"
+                name: "Sebastian Wollner",
+                company: "metaVentis",
+                companyURL: "https://edu-sharing.com/metaventis/"
+            }, {
+                name: "Torsten Simon",
+                company: "metaVentis",
+                companyURL: "https://edu-sharing.com/metaventis/"
             }],
             format: "markdown",
             localBiblio: {
@@ -650,6 +646,78 @@ Verweis auf die bevorzugte Zielgruppe für die Ressource, z.B. für Lernende ver
     <dd>TODO</dd>
     <dt>Interface-Ansicht</dt>
     <dd></dd>
+</dl>
+</section>
+
+<section data-dfn-for="Lehrplanthemen">
+### <dfn>Lehrplanthemen</dfn>
+
+Hier kann man als kontrolliertes Vokabular (Baum) mehrere Lehrplanthemen aus den Fachportalen auswählen. Wird ein Inhalt
+in einer redaktionellen Themensammlung einsortiert, wird dieses Metadatum automatisch angefügt. Umgekehrt wird der
+Inhalt aber nicht durch das Metadatentagging einer redaktionellen Sammlung zugeordnet.
+
+<dl>
+    <dt>Pflichtfeld</dt>
+    <dd>nein</dd>
+    <dt>Typ</dt>
+    <dd>`array[object]`</dd>
+    <dt>Werte</dt>
+    <dd>https://vocabs.openeduhub.de/w3id.org/openeduhub/vocabs/oeh-topics/5e40e372-735c-4b17-bbf7-e827a5702b57.html</dd>
+    <dt>Alfresco Property</dt>
+    <dd>`ccm:curriculum`</dd>
+    <dt>Kardinalität</dt>
+    <dd>n</dd>
+    <dt>Validierung</dt>
+    <dd>TODO</dd>
+    <dt>Interface-Ansicht</dt>
+    <dd></dd>
+</dl>
+</section>
+
+<section data-dfn-for="Zeitbedarf">
+### <dfn>Zeitbedarf</dfn>
+
+Die durchschnittliche benötigte Zeitdauer zur Bearbeitung der Ressource. Hier würdet ihr auch die Abspieldauer eines
+Videos (ggf. redundant ) speichern.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd>https://vocabs.openeduhub.de/w3id.org/openeduhub/vocabs/oeh-topics/5e40e372-735c-4b17-bbf7-e827a5702b57.html</dd>
+<dt>Alfresco Property</dt>
+<dd>`cclom:typicallearningtime`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+</section>
+
+<section data-dfn-for="Abspieldauer">
+### <dfn>Abspieldauer</dfn>
+
+Abspieldauer einer Ressource.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`cclom:duration`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
 </dl>
 </section>
 
