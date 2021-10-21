@@ -17,10 +17,6 @@
                 company: "metaVentis",
                 companyURL: "https://edu-sharing.com/metaventis/"
             }, {
-                name: "Steffen Rörtgen",
-                company: "GWDG",
-                companyURL: "https://www.gwdg.de/"
-            }, {
                 name: "Nele Bübl",
                 company: "edu-sharing Network e.V.",
                 companyURL: "https://edu-sharing-network.org/"
@@ -28,6 +24,10 @@
                 name: "Sebastian Wollner",
                 company: "metaVentis",
                 companyURL: "https://edu-sharing.com/metaventis/"
+            }, {
+                name: "Steffen Rörtgen",
+                company: "GWDG",
+                companyURL: "https://www.gwdg.de/"
             }, {
                 name: "Torsten Simon",
                 company: "metaVentis",
@@ -562,7 +562,7 @@ Verweis auf ein oder mehrere Schulfächer mit denen diese Ressource in Verbindun
 <dt>Typ</dt>
 <dd>`array[object]`</dd>
 <dt>Werte</dt>
-<dd><a href="http://w3id.org/openeduhub/vocabs/discipline/"></a>Schulfach</dd>
+<dd><a href="http://w3id.org/openeduhub/vocabs/discipline/">Schulfach</a></dd>
 <dt>Alfresco Property</dt>
 <dd>`ccm:taxonid`</dd>
 <dt>Kardinalität</dt>
@@ -657,20 +657,20 @@ in einer redaktionellen Themensammlung einsortiert, wird dieses Metadatum automa
 Inhalt aber nicht durch das Metadatentagging einer redaktionellen Sammlung zugeordnet.
 
 <dl>
-    <dt>Pflichtfeld</dt>
-    <dd>nein</dd>
-    <dt>Typ</dt>
-    <dd>`array[object]`</dd>
-    <dt>Werte</dt>
-    <dd>https://vocabs.openeduhub.de/w3id.org/openeduhub/vocabs/oeh-topics/5e40e372-735c-4b17-bbf7-e827a5702b57.html</dd>
-    <dt>Alfresco Property</dt>
-    <dd>`ccm:curriculum`</dd>
-    <dt>Kardinalität</dt>
-    <dd>n</dd>
-    <dt>Validierung</dt>
-    <dd>TODO</dd>
-    <dt>Interface-Ansicht</dt>
-    <dd></dd>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`array[object]`</dd>
+<dt>Werte</dt>
+<dd><a href="https://vocabs.openeduhub.de/w3id.org/openeduhub/vocabs/oeh-topics/5e40e372-735c-4b17-bbf7-e827a5702b57.html">WLO-Lehrplanthemen</a></dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:curriculum`</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
 </dl>
 </section>
 
@@ -1450,6 +1450,379 @@ Hinweis auf den Vertreiber einer Ressource.
 <!-- end Lizenz, Quelle, Mitwirkende -->
 </section>
 
+<section data-dfn-for="Entstehung des Inhalts">
+### <dfn>Entstehung des Inhalts</dfn>
+
+<section data-dfn-for="Mitwirkende">
+### <dfn>Mitwirkende</dfn>
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`Vcard`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`TODO`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<section data-dfn-for="Produzentin">
+### <dfn>Produzentin</dfn>
+
+Produzent:innen einer Ressource.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`TODO`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<section data-dfn-for="Erstellungsdatum">
+### <dfn>Erstellungsdatum</dfn>
+
+Datum, an dem die Ressource erstellt wurde.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`cm:created`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<section data-dfn-for="Letzte Änderung">
+### <dfn>Letzte Änderung</dfn>
+
+Datum, an dem die letzte Änderung an einer Ressource vorgenommen wurde.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`cm:modfied`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<section data-dfn-for="Version">
+### <dfn>Version</dfn>
+
+Version der Ressource:
+- Nr. der Version
+- Name der Version
+- Datum der Änderung / Vers.-Speicherung
+- wer speicherte
+- was ist anders (Änderungskommentar)
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`TODO`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<!-- end section Entstehung des Inhalts -->
+</section>
+
+<section data-dfn-for="Identifier und Signaturen">
+### <dfn>Identifier und Signaturen</dfn>
+
+<section data-dfn-for="Identifier">
+### <dfn>Identifier</dfn>
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`sys:node_uuid`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<section data-dfn-for="UID Inhalt">
+### <dfn>UID Inhalt</dfn>
+
+Eine im Internet eindeutige Adresse = Kennzeichnung ähnlich einer ISBN. Sie wird von einem Handle- oder DOI-Service
+generiert. Ergebnis ist eine langfristig eindeutige Internetadresse.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:published_handle_id`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<section data-dfn-for="UID Metadaten">
+### <dfn>UID Metadaten</dfn>
+
+Eine eindeutige ID, unter der die Metadaten einer Ressource zu finden sind.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`TODO`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<section data-dfn-for="Ausgangssignaturen">
+### <dfn>Ausgangssignaturen</dfn>
+
+ggf. mehrere weitere UIDs anderer Pools oder Systematiken oder des Produzenten,
+z.B. der ID der Quelle (z.B. FWU-Signatur) oder ISBN;
+
+Art der Signatur (ISBN), ID (9 783161 16 148410 0)
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`TODO`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<!-- end identifier signaturen -->
+</section>
+
+<section data-dfn-for="Nutzung und Bewertung">
+### <dfn>Nutzung und Bewertung</dfn>
+
+<section data-dfn-for="Nutzungsstatistik">
+### <dfn>Nutzungsstatistik</dfn>
+
+Nutzungsanzahl
+Optimal wäre Aufschlüsselung z.B.
+gesamt: 3000
+Suchergebnis-Klick: 300
+Inhalteaufruf: 100
+Einbindung: 50
+- davon Moodle 10
+- davon Mebis-Moodle 2
+Editiert haben: 5 Personen
+Derivate: 50 Stück
+Zitierung: 400 mal inkl. Derivate
+...
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`TODO`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<!-- end section Nutzung, Nutzenden-Bewertung -->
+</section>
+
+<section data-dfn-for="Erschließung und Kuratierung">
+### <dfn>Erschließung und Kuratierung</dfn>
+
+<section data-dfn-for="Ersteller:in der Metadaten">
+### <dfn>Ersteller:in der Metadaten</dfn>
+
+Ersteller:in der Metadaten einer Ressource.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:metadatacontributer_creator`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<section data-dfn-for="Name des Crawlers">
+### <dfn>Name des Crawlers</dfn>
+
+Ersteller:in der Metadaten einer Ressource.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:replicationsource`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<section data-dfn-for="UUID eines Objektes">
+### <dfn>UUID eines Objektes</dfn>
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:replicationsourceuuid`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<section data-dfn-for="Hash eines Objektes">
+### <dfn>Hash eines Objektes</dfn>
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:replicationsourcehash`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+
+</section>
+
+<!-- end section erschließung und kuratierung -->
+</section>
+
+<!-- end section profile -->
 </section>
 
 
