@@ -1361,7 +1361,7 @@ Urheber des Inhalts
 <dt>Pflichtfeld</dt>
 <dd>nein</dd>
 <dt>Typ</dt>
-<dd>`array[object]`</dd>
+<dd>`array[string]`</dd>
 <dt>Werte</dt>
 <dd>TODO</dd>
 <dt>Alfresco Property</dt>
@@ -1377,34 +1377,13 @@ Urheber des Inhalts
 
 </section>
 
-<section data-dfn-for="Quelle">
-### <dfn>Quelle</dfn>
-
-1:n Beziehung zu unseren Quellen
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`array[object]`</dd>
-<dt>Werte</dt>
-<dd>TODO</dd>
-<dt>Alfresco Property</dt>
-<dd>`TODO`</dd>
-<dt>Kardinalität</dt>
-<dd>1</dd>
-<dt>Validierung</dt>
-<dd>TODO</dd>
-<dt>Interface-Ansicht</dt>
-<dd></dd>
-</dl>
-
-</section>
-
 <section data-dfn-for="Herausgeber:in">
 ### <dfn>Herausgeber:in</dfn>
 
-Herausgeber:innen einer Ressource.
+"Herausgeber:innen einer Ressource.
+z.B. ""Pixar""
+
+Die Organisation über die das OER veröffentlicht wurde, z.B. der Youtube-Channel, Verlag"
 
 <dl>
 <dt>Pflichtfeld</dt>
@@ -1420,6 +1399,30 @@ Herausgeber:innen einer Ressource.
 <dt>Validierung</dt>
 <dd>TODO</dd>
 <dt>Interface-Ansicht</dt>
+<dd>Kachel - Kurzansicht (Suchergebnis / Sammlung)</dd>
+</dl>
+
+</section>
+
+<section data-dfn-for="Veröffentlichungsdatum">
+### <dfn>Veröffentlichungsdatum</dfn>
+
+Datum, an dem die Ressource veröffentlicht wurde.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>`ccm:published_date`</dd>
+<dt>Kardinalität</dt>
+<dd>1</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
 <dd></dd>
 </dl>
 
@@ -1429,6 +1432,7 @@ Herausgeber:innen einer Ressource.
 ### <dfn>Vertrieb</dfn>
 
 Hinweis auf den Vertreiber einer Ressource.
+z.B. Amazon vs. Netflix, bei uns Playouts z.B. Mundo, TIB
 
 <dl>
 <dt>Pflichtfeld</dt>
@@ -1477,29 +1481,6 @@ Hinweis auf den Vertreiber einer Ressource.
 
 </section>
 
-<section data-dfn-for="Produzentin">
-### <dfn>Produzentin</dfn>
-
-Produzent:innen einer Ressource.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`TODO`</dd>
-<dt>Werte</dt>
-<dd>TODO</dd>
-<dt>Alfresco Property</dt>
-<dd>`TODO`</dd>
-<dt>Kardinalität</dt>
-<dd>1</dd>
-<dt>Validierung</dt>
-<dd>TODO</dd>
-<dt>Interface-Ansicht</dt>
-<dd></dd>
-</dl>
-
-</section>
 
 <section data-dfn-for="Erstellungsdatum">
 ### <dfn>Erstellungsdatum</dfn>
@@ -1584,8 +1565,10 @@ Version der Ressource:
 <section data-dfn-for="Identifier und Signaturen">
 ### <dfn>Identifier und Signaturen</dfn>
 
-<section data-dfn-for="Identifier">
+<section data-dfn-for="WLO-Identifier">
 ### <dfn>Identifier</dfn>
+
+Als Verlinkung basteln, Link auf EInzelansicht
 
 <dl>
 <dt>Pflichtfeld</dt>
@@ -1612,6 +1595,8 @@ Version der Ressource:
 Eine im Internet eindeutige Adresse = Kennzeichnung ähnlich einer ISBN. Sie wird von einem Handle- oder DOI-Service
 generiert. Ergebnis ist eine langfristig eindeutige Internetadresse.
 
+Wenn beim Crawling eine 
+
 <dl>
 <dt>Pflichtfeld</dt>
 <dd>nein</dd>
@@ -1631,31 +1616,8 @@ generiert. Ergebnis ist eine langfristig eindeutige Internetadresse.
 
 </section>
 
-<section data-dfn-for="UID Metadaten">
-### <dfn>UID Metadaten</dfn>
 
-Eine eindeutige ID, unter der die Metadaten einer Ressource zu finden sind.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`TODO`</dd>
-<dt>Werte</dt>
-<dd>TODO</dd>
-<dt>Alfresco Property</dt>
-<dd>`TODO`</dd>
-<dt>Kardinalität</dt>
-<dd>1</dd>
-<dt>Validierung</dt>
-<dd>TODO</dd>
-<dt>Interface-Ansicht</dt>
-<dd></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="Ausgangssignaturen">
+<section data-dfn-for="Signaturen">
 ### <dfn>Ausgangssignaturen</dfn>
 
 ggf. mehrere weitere UIDs anderer Pools oder Systematiken oder des Produzenten,
@@ -1663,11 +1625,19 @@ z.B. der ID der Quelle (z.B. FWU-Signatur) oder ISBN;
 
 Art der Signatur (ISBN), ID (9 783161 16 148410 0)
 
+vergebener Bezeichner
+
+Erst Bezeichnung der Signatur ("ISBN", "URI"...)
+Dann jeweiliger Identifier
+evtl noch Hinweis ob maschinengeneriert
+
+Perspektivisch Integration mit Handle <a>UID Inhalt</a>
+
 <dl>
 <dt>Pflichtfeld</dt>
 <dd>nein</dd>
 <dt>Typ</dt>
-<dd>`TODO`</dd>
+<dd>`array[object]`</dd>
 <dt>Werte</dt>
 <dd>TODO</dd>
 <dt>Alfresco Property</dt>
@@ -1702,7 +1672,9 @@ Einbindung: 50
 Editiert haben: 5 Personen
 Derivate: 50 Stück
 Zitierung: 400 mal inkl. Derivate
-...
+
+TODO Profil für den Austausch muss noch erstellt werden
+TODO wie und wann werden die Daten erfasst
 
 <dl>
 <dt>Pflichtfeld</dt>
@@ -1723,16 +1695,72 @@ Zitierung: 400 mal inkl. Derivate
 
 </section>
 
+<section data-dfn-for="Kommentar">
+### <dfn>Kommentar</dfn>
+
+"Ein (user-)verfasster Kommentar zur Ressource.
+
+Ein Kommentar ist wie ein Kommentar unter einem Blog Post zu verstehen. Es handelt sich hierbei nicht um eine Bewertung
+des Items, auf das sich der Kommentar bezieht"
+
+Wird nur in Einzelansicht angezeigt, kann nicht bearbeitet werden im Metadatendialog.
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>hängt als child-Objekte am Inhalt</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+</section>
+
+<section data-dfn-for="Review">
+### <dfn>Review</dfn>
+
+**Noch in Diskussion**
+
+Bewertung einer Ressource (hinsichtlich eines bestimmten Aspekts).
+
+
+<dl>
+<dt>Pflichtfeld</dt>
+<dd>nein</dd>
+<dt>Typ</dt>
+<dd>`TODO`</dd>
+<dt>Werte</dt>
+<dd>TODO</dd>
+<dt>Alfresco Property</dt>
+<dd>hängt als child-Objekte am Inhalt</dd>
+<dt>Kardinalität</dt>
+<dd>n</dd>
+<dt>Validierung</dt>
+<dd>TODO</dd>
+<dt>Interface-Ansicht</dt>
+<dd></dd>
+</dl>
+</section>
+
+
+
 <!-- end section Nutzung, Nutzenden-Bewertung -->
 </section>
 
 <section data-dfn-for="Erschließung und Kuratierung">
 ### <dfn>Erschließung und Kuratierung</dfn>
 
-<section data-dfn-for="Ersteller:in der Metadaten">
-### <dfn>Ersteller:in der Metadaten</dfn>
+<section data-dfn-for="Beteiligte an Metadaten und Kuratierung">
+### <dfn>Beteiligte an Metadaten und Kuratierung</dfn>
 
-Ersteller:in der Metadaten einer Ressource.
+
 
 <dl>
 <dt>Pflichtfeld</dt>
@@ -1753,73 +1781,6 @@ Ersteller:in der Metadaten einer Ressource.
 
 </section>
 
-<section data-dfn-for="Name des Crawlers">
-### <dfn>Name des Crawlers</dfn>
-
-Ersteller:in der Metadaten einer Ressource.
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`TODO`</dd>
-<dt>Werte</dt>
-<dd>TODO</dd>
-<dt>Alfresco Property</dt>
-<dd>`ccm:replicationsource`</dd>
-<dt>Kardinalität</dt>
-<dd>1</dd>
-<dt>Validierung</dt>
-<dd>TODO</dd>
-<dt>Interface-Ansicht</dt>
-<dd></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="UUID eines Objektes">
-### <dfn>UUID eines Objektes</dfn>
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`TODO`</dd>
-<dt>Werte</dt>
-<dd>TODO</dd>
-<dt>Alfresco Property</dt>
-<dd>`ccm:replicationsourceuuid`</dd>
-<dt>Kardinalität</dt>
-<dd>1</dd>
-<dt>Validierung</dt>
-<dd>TODO</dd>
-<dt>Interface-Ansicht</dt>
-<dd></dd>
-</dl>
-
-</section>
-
-<section data-dfn-for="Hash eines Objektes">
-### <dfn>Hash eines Objektes</dfn>
-
-<dl>
-<dt>Pflichtfeld</dt>
-<dd>nein</dd>
-<dt>Typ</dt>
-<dd>`TODO`</dd>
-<dt>Werte</dt>
-<dd>TODO</dd>
-<dt>Alfresco Property</dt>
-<dd>`ccm:replicationsourcehash`</dd>
-<dt>Kardinalität</dt>
-<dd>1</dd>
-<dt>Validierung</dt>
-<dd>TODO</dd>
-<dt>Interface-Ansicht</dt>
-<dd></dd>
-</dl>
-
-</section>
 
 <!-- end section erschließung und kuratierung -->
 </section>
